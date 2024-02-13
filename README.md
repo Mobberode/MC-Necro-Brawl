@@ -1,3 +1,4 @@
+![necrobrawl_2k](https://github.com/Mobberode/MC-Necro-Brawl/assets/121296120/e066ec70-d881-4fe5-8c1e-e752e14dc130)
 # Adford / Zombie Survival: Necro Brawl | v1.0
 ## A more competitive based PvPvE mini-game where the first player / team that reaches the point limit wins the game!
 
