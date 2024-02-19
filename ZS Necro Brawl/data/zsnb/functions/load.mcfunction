@@ -1,4 +1,5 @@
 ##Init
+scoreboard players set #Game zs.game 2
 #Start
 #Borders
 schedule function zsnb:game/border/poscheck 1s
