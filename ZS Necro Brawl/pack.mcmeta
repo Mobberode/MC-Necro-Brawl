@@ -1,17 +1,27 @@
 {
-    "pack": {
-      "pack_format": 26,
-      "description": "Zombie Survival: NECRO BRAWL"
-    },
-    "filter": {
-      "block": [
-        {
-          "path": "advancements"
+  "pack": {
+    "pack_format": 48,
+    "description": "Zombie Survival / Mobberode: NECRO BRAWL"
+  },
+  "filter": {
+    "block": [
+      {
+        "path": "advancement"
+      },
+      {
+        "path": "recipe"
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": {
+          "min_inclusive": 22,
+          "max_inclusive": 26
         },
-        {
-          "path": "recipes"
-        }
-      ]
-    }
+        "directory": "1202_4"
+      }
+    ]
   }
-  
+}
