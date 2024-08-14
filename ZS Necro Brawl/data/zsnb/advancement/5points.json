@@ -1,0 +1,23 @@
+{
+    "parent": "minecraft:adventure/kill_a_mob",
+    "criteria": {
+      "kill": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#zsnb:5points"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "zsnb:game/mobs/points/5"
+    }
+  }
+  
