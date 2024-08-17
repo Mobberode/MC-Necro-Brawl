@@ -1,9 +1,11 @@
 ##Reset Relogged Player
+kill @s
+clear @s
 team join Waiting @s
-$scoreboard players remove @s zsnb.points $(dpda)
-tag @s[tag=host] remove host
+tag @s remove host
+tag @s remove zsnb.received
 #Reset Score
 scoreboard players set @s zs.relogged 0
 
 ##Bring
-execute if score #Score zs.game.status matches 3..4 run schedule function zsnb:game/brawl/bring 2t
+execute if score #Score zs.game.status matches 3..4 run function zsnb:game/brawl/bring

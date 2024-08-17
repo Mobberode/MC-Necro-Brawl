@@ -15,6 +15,3 @@ $item replace entity @a[tag=!zsnb.received,tag=$(role_tag)] armor.feet with iron
 scoreboard players remove #ArmourTick zs.timer 1
 scoreboard players add #RolesProcessed zs.timer 1
 execute unless score #ArmourTick zs.timer matches 0 run function zsnb:game/gear/loot/cosmetics with storage minecraft:zsnb.macro
-
-#Tag exisiting Waiting members with received
-tag @a[tag=!zsnb.received] add zsnb.received
