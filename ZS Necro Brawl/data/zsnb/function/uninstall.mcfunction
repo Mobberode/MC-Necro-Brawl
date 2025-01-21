@@ -17,4 +17,4 @@ team remove Dead
 team remove Waiting
 
 ##Announce
-tellraw @a {"text": "ZS: NECRO BRAWL Uninstalled! There may be some score objectives and other stuff left over from previous versions","color": "gold"}
+tellraw @a {text:"ZS: NECRO BRAWL Uninstalled! There may be some score objectives and other stuff left over from previous versions",color:gold}

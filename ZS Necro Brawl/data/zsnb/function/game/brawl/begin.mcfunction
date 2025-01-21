@@ -5,7 +5,7 @@ scoreboard players set #Score zsnb.highest.points 0
 scoreboard players set #Cache zsnb.points 0
 scoreboard players set @a zs.relogged 0
 difficulty easy
-title @a actionbar {"text":"Brawl started"}
+title @a actionbar {text:"Brawl started"}
 execute at @a run playsound minecraft:item.trident.thunder ambient @a
 
 ##Start mob spawning
