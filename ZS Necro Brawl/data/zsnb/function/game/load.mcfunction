@@ -1,6 +1,4 @@
 ##Prepare for Game
-#Player
-scoreboard objectives add zsnb.players dummy
 ##Mobs
 scoreboard objectives add zsnb.mob.amount dummy
 scoreboard objectives add zsnb.mob.amount.operation dummy

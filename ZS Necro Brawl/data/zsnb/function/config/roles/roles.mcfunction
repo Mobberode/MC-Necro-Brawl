@@ -36,3 +36,9 @@ execute as 02e40f20-686a-4e40-8dda-84d3a2cadc3f run tag @s add Has.Developers
 
 ##Medalist
 
+data remove storage mb:special roles
+
+data modify storage mb:special roles append value {tag:"Curated",pattern:"vex",material:"gold"}
+data modify storage mb:special roles append value {tag:"Developers",pattern:"silence",material:"amethyst"}
+data modify storage mb:special roles append value {tag:"ZS.OGs",pattern:"eye",material:"diamond"}
+data modify storage mb:special roles append value {tag:"ZS.Testers",pattern:"sentry",material:"emerald"}

@@ -1,0 +1,1 @@
+$execute if entity @s[tag=$(tag)] run function zsnb:game/gear/loot/roles/wear with storage zsnb.macro

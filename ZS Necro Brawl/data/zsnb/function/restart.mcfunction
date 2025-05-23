@@ -1,5 +1,4 @@
 ##Reset for Restart System
-scoreboard players set #Score zsc.players 0
 scoreboard players set #Score zs.game.status 1
 
 schedule clear zsnb:game/brawl/timer
