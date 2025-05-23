@@ -1,5 +1,5 @@
 ##This gives info about how many mobs are left for those who have it enabled.
-execute store result score #Active zsnb.mob.amount run effect give @e[tag=mob] minecraft:luck 1 1 true
+execute store result score #Active zsnb.mob.amount run effect give @e[tag=mb.mob] minecraft:luck 1 1 true
 
 ##Leader Info
 scoreboard players set #LeaderScore zsnb.points 0

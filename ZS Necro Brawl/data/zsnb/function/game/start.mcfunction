@@ -1,5 +1,5 @@
 ##Start the game
-kill @e[tag=mob]
+kill @e[tag=mb.mob]
 effect clear @a
 clear @a
 gamemode adventure @a
