@@ -17,7 +17,7 @@ schedule clear zsnb:game/death/deathcheck
 schedule clear zsnb:lobby/waiting/wait
 schedule clear zsnb:game/brawl/cooldown
 schedule clear zsnb:game/brawl/mobcheck
-schedule clear zsnb:game/border/poscheck
+schedule clear mb.base:technical/border/poscheck
 schedule clear zsnb:game/brawl/timer
 schedule clear zsnb:game/brawl/gameover
 schedule clear zsnb:game/mobs/necrobrawl/spawning

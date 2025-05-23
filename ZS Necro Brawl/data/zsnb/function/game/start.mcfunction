@@ -14,7 +14,7 @@ schedule function zsnb:game/gear/loot 2t
 schedule function zsnb:game/gear/start/transfer 1s
 
 ##Teleport
-execute as @e[tag=zs.plrspawn,sort=random] run tp @a[team=!Alive] @s
+execute as @e[tag=zs.plrspawn,sort=random] run tp @a[team=!mb.base.alive] @s
 
 #Start Death Check
 function zsnb:game/death/deathcheck

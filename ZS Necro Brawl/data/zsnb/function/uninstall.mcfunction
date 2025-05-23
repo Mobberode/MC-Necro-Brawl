@@ -12,8 +12,8 @@ scoreboard objectives remove zsnb.players
 scoreboard objectives remove zsnb.points
 scoreboard objectives remove zsnb.wins
 #Teams
-team remove Alive
-team remove Dead
+team remove mb.base.alive
+team remove mb.base.dead
 team remove Waiting
 
 ##Announce

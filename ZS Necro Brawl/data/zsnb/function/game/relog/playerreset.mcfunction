@@ -2,7 +2,7 @@
 kill @s
 clear @s
 team join Waiting @s
-tag @s remove host
+tag @s remove mb.host
 tag @s remove zsnb.received
 #Reset Score
 scoreboard players set @s zs.relogged 0

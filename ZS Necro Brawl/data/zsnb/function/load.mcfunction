@@ -2,7 +2,7 @@
 scoreboard players set #Game zs.game 2
 #Start
 #Borders
-schedule function zsnb:game/border/poscheck 1s
+schedule function mb.base:technical/border/poscheck 1s
 #Prepare for Game
 schedule function zsnb:game/load 1s
 #Relog

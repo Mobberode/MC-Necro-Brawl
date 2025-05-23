@@ -1,7 +1,4 @@
 ##Add Alive, Dead and Waiting
-#Alive
-function zsnb:game/teams/addalive
-#Dead (Spectators) and (Mobs)
-function zsnb:game/teams/adddead
+function mb.base:technical/initalization/teams
 #Waiting
 function zsnb:game/teams/addwaiting
