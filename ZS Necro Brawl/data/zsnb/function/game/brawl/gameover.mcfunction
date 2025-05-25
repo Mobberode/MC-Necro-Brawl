@@ -6,3 +6,5 @@ scoreboard players set @a zsnb.wins 0
 
 ##Win is done
 function zsnb:game/brawl/restart
+
+function #zsnb:game_over
