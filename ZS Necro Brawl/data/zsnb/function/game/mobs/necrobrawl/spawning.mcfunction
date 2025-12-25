@@ -1,13 +1,11 @@
 ##List of mobs (Least Points Worth to Most Points Worth)
-#Loop
-execute unless score #Score zs.game.status matches ..3 run schedule function zsnb:game/mobs/necrobrawl/spawning 5t
 ##1
 #Zombie
 execute if score #MinuteScore zs.timer matches 0..1 if predicate zsnb:tenth run function zsnb:game/mobs/global/zombie
 #Skeleton
 execute if score #MinuteScore zs.timer matches 1..2 if predicate zsnb:tenth run function zsnb:game/mobs/global/skeleton
 #Spider
-execute if score #MinuteScore zs.timer matches 1..2 if predicate zsnb:tenth run function zsnb:game/mobs/global/spider
+execute if score #MinuteScore zs.timer matches 0..2 if predicate zsnb:tenth run function zsnb:game/mobs/global/spider
 ##2 
 #Husk
 execute if score #MinuteScore zs.timer matches 2.. if predicate zsnb:tenth run function zsnb:game/mobs/global/husk

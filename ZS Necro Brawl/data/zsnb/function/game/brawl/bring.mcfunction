@@ -1,6 +1,9 @@
 function zsnb:game/gear/loot
-execute as @e[tag=zs.plrspawn,sort=random] run tp @a[team=!mb.base.alive] @s
-execute as @e[tag=zs.plrspawn,sort=random] run tp @a[tag=died] @s
-team join mb.base.alive @a[team=!mb.base.alive]
-tag @a[tag=died] remove died
-tag @a[team=mb.base.alive] add playing
+
+tp @s @e[type=marker,tag=zs.plrspawn,sort=random,limit=1]
+team join mb.base.alive @s
+function zsnb:game/mobs/calculate_cap
+
+scoreboard players set @s zs.died 0
+
+effect give @s resistance 3 4

@@ -1,3 +1,5 @@
+execute if score @s zs.coas matches 1.. run function zsnb:lobby/menu/initmenu
+
 scoreboard players enable @s zs.menu.section
 scoreboard players enable @s zs.menu.interaction
 #Init Menu

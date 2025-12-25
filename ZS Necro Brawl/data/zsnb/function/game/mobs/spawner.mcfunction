@@ -1,7 +1,11 @@
-##This will be called first to start the correct spawning from the config.
-#Will also be the limiter on the active mobs amount
+##Spawner
+#Get count of current mobs
+execute store result score #Active zsnb.mob.amount if entity @e[type=!player,tag=mb.mob]
+
+#Check (If active cap reached)
+execute if score #Active zsnb.mob.amount >= #ActiveCap zsnb.mob.amount run return run function zsnb:game/mobs/pause
+#Unless
 function zsnb:game/mobs/necrobrawl/spawning
 
-##Start the limiter
-scoreboard players set #ActiveCap zsnb.mob.amount 25
-function zsnb:game/mobs/limiter
+#Loop
+execute if score #Score zs.game.status matches 4 run schedule function zsnb:game/mobs/spawner 1t

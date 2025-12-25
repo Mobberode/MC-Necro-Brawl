@@ -1,8 +1,5 @@
 ##Start if all is met
-execute if entity @e[tag=zs.plrspawn] if entity @e[tag=zs.+border] if entity @e[tag=zs.-border] run schedule function zsnb:game/start 5s
-execute if entity @e[tag=zs.plrspawn] if entity @e[tag=zs.+border] if entity @e[tag=zs.-border] run tellraw @a {text:"[ZSNB] Required Elements met. Please wait for start!",color:green,bold:true}
+execute if entity @e[type=marker,tag=zs.plrspawn] if entity @e[type=marker,tag=zs.+border] if entity @e[type=marker,tag=zs.-border] run return run function zsnb:game/start
 
 ##If not
-execute unless entity @e[tag=zs.plrspawn] run tellraw @a {text:"[ZSNB] There's no Player Spawn Element!",color:dark_red,bold:true}
-execute unless entity @e[tag=zs.+border] run tellraw @a {text:"[ZSNB] There's no Positive Border!",color:dark_red,bold:true}
-execute unless entity @e[tag=zs.-border] run tellraw @a {text:"[ZSNB] There's no Negative Border!",color:dark_red,bold:true}
+tellraw @a {text:"[Necro Brawl] Required Element(s) not present!",color:red,bold:true}

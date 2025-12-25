@@ -1,2 +1,2 @@
-execute at @e[tag=zs.pillagerspawn,sort=random,limit=1] run summon minecraft:pillager ~ ~ ~
+execute at @e[type=marker,tag=zs.pillagerspawn,sort=random,limit=1] run summon minecraft:pillager ~ ~ ~
 scoreboard players add #Amount zsnb.mob.amount 1

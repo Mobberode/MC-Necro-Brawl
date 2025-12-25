@@ -3,6 +3,6 @@ function zsnb:restart
 
 ##Start the engines!
 clear @a
-function zsnb:lobby/menu/trigger_detection
+function zsnb:game/loop
 function mb.base:technical/host/find_host
 function zsnb:lobby/lobby

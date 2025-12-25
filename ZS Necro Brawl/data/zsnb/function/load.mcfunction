@@ -1,21 +1,17 @@
 ##Init
 scoreboard players set #Game zs.game 2
-#Start
-#Borders
-schedule function mb.base:technical/border/poscheck 1s
 #Prepare for Game
-schedule function zsnb:game/load 1s
-#Relog
-schedule function zsnb:game/relog/relogdetect 10t
+function zsnb:game/load
+#Borders
+function mb.base:technical/border/poscheck
+
+##Add Teams
+#Special Roles
+function zsnb:config/roles/roles
+#Standard Teams
+function zsnb:game/teams/teamadd
 
 #Set Tags
 scoreboard players set #Score zs.game.status 1
 
-##Add Teams
-#Special Roles
-schedule function zsnb:config/roles/roles 1s
-#Standard Teams
-schedule function zsnb:game/teams/teamadd 1s
-
-schedule function zsnb:gameload 1s
-schedule function zsnb:config/moreinfo/send 1s
+function zsnb:gameload

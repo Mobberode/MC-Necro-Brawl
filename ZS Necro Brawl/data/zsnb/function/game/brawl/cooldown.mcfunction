@@ -1,14 +1,13 @@
 ##Tick down
 scoreboard players remove #MiliScore zs.timer 1
-execute if score #MiliScore zs.timer matches 0 run scoreboard players remove #Score zs.timer 1
-execute if score #MiliScore zs.timer matches ..0 run scoreboard players set #MiliScore zs.timer 20
+execute if score #MiliScore zs.timer matches ..-1 run function zsnb:lobby/time_second_tick
 
-#Announce Time
-execute if score #Score zs.timer matches 4 if score #MiliScore zs.timer matches 20 run tellraw @a {text:"* Players have 5 seconds to prepare to brawl!*",color:yellow}
-execute if score #Score zs.timer matches 0..24 if score #MiliScore zs.timer matches 0..20 run title @a actionbar [{text:"Necro Brawl starts in: "},{score:{name:"#Score","objective":zs.timer}},{text:"."},{score:{name:"#MiliScore",objective:zs.timer}}]
+#Time indicate
+execute as @a at @s if score #Score zs.timer matches 1..5 if score #MiliScore zs.timer matches 0 run playsound entity.elder_guardian.curse ui @s ~ ~ ~
+title @a actionbar ["Pre-Brawl Intermission: ",{score:{name:"#Score",objective:zs.timer}},".",{score:{name:"#MiliScore","objective":zs.timer}}]
 
 ##Break loop to start wave and spawn mobs
 execute if score #Score zs.timer matches ..-1 run function zsnb:game/brawl/begin
 
 ##Loop
-execute unless score #Score zs.game.status matches 4 run schedule function zsnb:game/brawl/cooldown 1t
+execute if score #Score zs.game.status matches 3 run schedule function zsnb:game/brawl/cooldown 1t

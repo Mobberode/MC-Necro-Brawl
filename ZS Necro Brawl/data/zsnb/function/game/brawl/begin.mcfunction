@@ -11,12 +11,11 @@ execute at @a run playsound minecraft:item.trident.thunder ambient @a
 ##Start mob spawning
 scoreboard players set #Amount zsnb.mob.amount 0
 function zsnb:game/mobs/spawner
-#Start mob check
-function zsnb:game/brawl/mobcheck
-#Win Detector
-function zsnb:game/brawl/wincheck
 #Timer
 scoreboard players set #MiliScore zs.timer 0
 scoreboard players set #Score zs.timer 0
 scoreboard players set #MinuteScore zs.timer 0
-function zsnb:game/brawl/timer
+
+#Stopwatch
+stopwatch remove necro_brawl:timer
+stopwatch create necro_brawl:timer

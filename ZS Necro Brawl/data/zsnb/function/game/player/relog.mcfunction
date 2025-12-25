@@ -1,11 +1,10 @@
 ##Reset Relogged Player
-kill @s
+kill
 clear @s
-team join Waiting @s
+team join zsnb.waiting @s
 tag @s remove mb.host
 tag @s remove zsnb.received
 #Reset Score
 scoreboard players set @s zs.relogged 0
 
-##Bring
-execute if score #Score zs.game.status matches 3..4 run function zsnb:game/brawl/bring
+scoreboard players set @s zsnb.respawn_delay 2
